@@ -1,0 +1,14 @@
+start_time_steps: !!float 25e3
+eval_freq: !!float 1e3
+buffer_size: !!float 1e6
+batch_size: 256
+critic_lr: !!float 3e-4
+gamma: 0.99
+tau: 0.005
+alpha: 0.2  # SAC
+automatic_entropy_tuning: false  # SAC
+alpha_lr: !!float 3e-4  # SAC
+reward_scale: 5.0  # SAC
+policy_noise: 0.2  # TD3
+noise_clip: 0.5  # TD3
+policy_freq: 2  # TD3
